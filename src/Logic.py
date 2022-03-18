@@ -10,7 +10,7 @@ def cleanCRNs(excel_df: pd.DataFrame) -> pd.DataFrame:
     excel_df["사업자등록번호"] = crnList
     return excel_df
 
-def matchCRN(path1, path2, outputDir):
+def matchCRN(path1, path2):
     excel1 = cleanCRNs(pd.read_excel(path1))
     excel2 = cleanCRNs(pd.read_excel(path2))
 
